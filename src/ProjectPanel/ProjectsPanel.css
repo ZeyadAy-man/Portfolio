@@ -1,0 +1,46 @@
+.project-tab {
+  width: 110px;
+  background: rgba(20, 20, 20, 0.75);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  user-select: none;
+  font-size: 0.4rem;
+  transition: box-shadow 0.2s ease;
+  transform: translateZ(0); /* Forces GPU rendering */
+  will-change: transform;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.project-tab:hover {
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
+}
+
+.project-tab .header {
+  font-weight: bold;
+  padding: 6px 8px;
+  font-size: 0.8rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-tab .body {
+  padding: 6px 8px;
+  color: white;
+  line-height: 1.2;
+}
+
+.project-tab a {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 0.65rem;
+  color: cyan;
+  text-decoration: none;
+}
+
+.project-tab a:hover {
+  text-decoration: underline;
+}
